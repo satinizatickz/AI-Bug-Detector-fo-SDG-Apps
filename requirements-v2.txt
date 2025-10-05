@@ -1,0 +1,14 @@
+# Core dependencies for AI Bug Detector v2
+pylint==3.2.5
+astroid==3.2.4
+jsonschema==4.23.0
+
+# Optional - for training or domain expansion (future use)
+scikit-learn==1.5.1
+numpy==1.26.4
+pandas==2.2.2
+
+# For building future web dashboard (Phase 3)
+streamlit==1.38.0
+matplotlib==3.9.2
+plotly==5.24.1
