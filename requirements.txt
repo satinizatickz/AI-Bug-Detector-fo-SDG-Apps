@@ -1,0 +1,6 @@
+pandas
+regex
+scikit-learn
+nltk
+spacy
+joblib
