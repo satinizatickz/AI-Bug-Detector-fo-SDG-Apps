@@ -1,46 +1,130 @@
-# AI Bug Detector for SDG Apps
 
-A starter project that scans Python source files for basic issues and generates a sector-specific bug report.
-Sectors supported: `education`, `health`, `environment`.
+🧠 AI Bug Detector for SDG Apps
 
-## Quick start
+An AI-powered project that automatically scans and detects bugs in Python applications supporting the UN Sustainable Development Goals (SDGs) — such as Education, Health, and Environment.
 
-1. Create a virtual environment and install dependencies:
-```bash
-python -m venv .venv
-source .venv/bin/activate   # on Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-```
+This tool helps developers ensure higher code quality and reliability for SDG-related software projects.
 
-2. Run the detector:
-```bash
-python bug_detector.py --sector education --file path/to/your_script.py
-```
 
-3. Reports are saved to `reports/bug_reports.json`.
+---
 
-## What this starter detects
-- Syntax errors
-- Missing module/class/function docstrings
-- `TODO` markers
-- Long functions (> 50 lines) as a simple code-smell heuristic
+🚀 Features
 
-## Project structure
-```
-AI-Bug-Detector-for-SDG-Apps/
-├── bug_detector.py
+Scans Python files for code quality issues
+
+Detects syntax errors, missing docstrings, and long functions
+
+Classifies code based on SDG domains
+
+Generates structured bug reports in JSON format
+
+
+
+---
+
+🧩 AI Bug Detector v2 — SDG Smart Analyzer (New)
+
+The AI Bug Detector v2 is the improved, smarter version of the original tool.
+It introduces AI-based code understanding, Pylint integration, and domain detection to provide more meaningful insights into your code.
+
+
+---
+
+🔧 New in Version 2
+
+✅ AST-based static analysis (finds deep code issues)
+
+✅ Pylint integration for professional-grade scoring
+
+✅ AI domain detection (Education, Health, Environment)
+
+✅ Detailed JSON bug reports
+
+✅ Organized report output under /reports/bug_report_v2.json
+
+
+
+---
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/satinizatickz/AI-Bug-Detector-fo-SDG-Apps.git
+cd AI-Bug-Detector-fo-SDG-Apps
+
+Install dependencies for version 2:
+
+pip install -r requirements_v2.txt
+
+
+---
+
+▶️ How to Use
+
+Run the upgraded bug detector:
+
+python bug_detector_v2.py
+
+When prompted, enter the path to your .py file, for example:
+
+sample_education.py
+
+After running, check the generated report here:
+
+reports/bug_report_v2.json
+
+
+---
+
+🧾 Example Output
+
+{
+    "file": "sample_education.py",
+    "analyzed_on": "2025-10-05T14:23:10Z",
+    "domain": "Education",
+    "code_quality_score": 8.5,
+    "ast_issues": [...],
+    "pylint_issues": [...]
+}
+
+
+---
+
+📂 Project Structure
+
+AI-Bug-Detector-fo-SDG-Apps/
+│
+├── bug_detector.py            # Original basic version
+├── bug_detector_v2.py         # New smart version with AI logic
 ├── requirements.txt
-├── README.md
-├── data/
-│   ├── education/
-│   ├── health/
-│   └── environment/
+├── requirements_v2.txt
 ├── models/
 │   ├── education_model.pkl
 │   ├── health_model.pkl
 │   └── environment_model.pkl
-└── reports/
-    └── bug_reports.json
-```
+├── reports/
+│   └── bug_report_v2.json
+└── sample_education.py
 
-You can extend this project by adding NLP/ML models per sector, integrating static analysis tools, or building a web UI with Streamlit.
+
+---
+
+🌍 Future Plans
+
+Build Streamlit Web Dashboard (Phase 3)
+
+Add GitHub Actions CI automation
+
+Expand to more SDG domains (Agriculture, Energy, Water)
+
+Integrate code fix recommendations
+
+
+
+---
+
+💡 Credits
+
+Developed by Zatickz — as part of the AI for Software Engineering Project.
+Empowering sustainable development through smarter software.
